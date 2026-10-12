@@ -1,0 +1,12 @@
+[
+  {"uuid":"00000000-0000-0000-0000-000000000001","content":"# Project Plan\nid:: 00000000-0000-0000-0000-000000000001","properties":{},"children":[
+    {"uuid":"00000000-0000-0000-0000-000000000002","content":"Goals for Q4 with [[Roadmap]] and #[[deep work]]","children":[
+      {"uuid":"00000000-0000-0000-0000-000000000003","content":"Ship the OUTLINE_LEAF_MARKER beta","children":[
+        {"uuid":"00000000-0000-0000-0000-000000000004","content":"Collect feedback\ncollapsed:: true","properties":{"collapsed":true}}
+      ]}
+    ]},
+    {"uuid":"00000000-0000-0000-0000-000000000005","content":"TODO Write release notes"},
+    {"uuid":"00000000-0000-0000-0000-000000000006","content":"DONE Draft outline\nSCHEDULED: <2026-10-20 Tue>"}
+  ]},
+  {"uuid":"00000000-0000-0000-0000-000000000007","content":"Visit [Logseq site](https://logseq.com/) and see ((00000000-0000-0000-0000-000000000003))"}
+]

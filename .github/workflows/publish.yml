@@ -1,0 +1,30 @@
+name: Build plugin release zip
+
+on:
+  push:
+    tags:
+      - "*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PLUGIN_NAME: logseq-docx-export
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npm test
+      - run: npm run package
+      - name: Attach the zip to the release for this tag
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/${{ env.PLUGIN_NAME }}.zip
+          generate_release_notes: true
