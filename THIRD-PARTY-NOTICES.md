@@ -1,8 +1,8 @@
 # Third-party notices
 
-The DOCX Export plugin's built bundle includes the `docx` and `jszip` libraries and their runtime dependencies, listed below (generated 2026-10-02 from the lock file and each package's licence file or `package.json`). The `@logseq/libs` package and its dependencies are also bundled and are not listed yet; this file is being completed. Development-only tools (TypeScript, esbuild, vitest and so on) are not shipped and are not listed.
+The DOCX Export plugin's built bundle includes the `docx` and `jszip` libraries and their runtime dependencies, listed below (generated 2026-10-02 from the lock file and each package's licence file or `package.json`). The `@logseq/libs` package (the Logseq plugin SDK) and its dependencies are also bundled and are listed below (versions from `package-lock.json`, licences and copyright lines read from each package's `node_modules` folder on 2026-10-13). Development-only tools (TypeScript, esbuild, vitest and so on) are not shipped and are not listed.
 
-DOCX Export itself is MIT licensed (see `LICENSE`).
+DOCX Export itself is licensed under the GNU AGPL-3.0-or-later (see `LICENSE`). The full source of the plugin, including the Pro code, is in this repository. You may modify and redistribute it under that licence.
 
 | Package | Version | Licence | Copyright |
 |---|---|---|---|
@@ -26,9 +26,26 @@ DOCX Export itself is MIT licensed (see `LICENSE`).
 | safe-buffer | 5.1.2 | MIT | Copyright (c) Feross Aboukhadijeh |
 | string_decoder | 1.1.1 | MIT | Copyright Node.js contributors |
 | util-deprecate | 1.0.2 | MIT | Copyright (c) 2014 Nathan Rajlich |
+| @logseq/libs | 0.2.12 | No licence declared in the package (no `license` field in its `package.json`, no LICENSE file in the package). Its source is in logseq/logseq, which is licensed AGPL-3.0: https://github.com/logseq/logseq/tree/master/libs. DOCX Export is therefore licensed AGPL-3.0-or-later. | None stated in the package |
+| csstype | 3.1.0 | MIT | Copyright (c) 2017-2018 Fredrik Nicol |
+| debug | 4.3.4 | MIT | Copyright (c) 2014-2017 TJ Holowaychuk; Copyright (c) 2018-2021 Josh Junon |
+| ms | 2.1.2 | MIT | Copyright (c) 2016 Zeit, Inc. |
+| deepmerge | 4.3.1 | MIT | Copyright (c) 2012 James Halliday, Josh Duff, and other contributors |
+| dompurify | 3.3.1 | MPL-2.0 OR Apache-2.0 (used under Apache-2.0) | Copyright 2025 Dr.-Ing. Mario Heiderich, Cure53 |
+| eventemitter3 | 4.0.7 | MIT | Copyright (c) 2014 Arnout Kazemier |
+| fast-deep-equal | 3.1.3 | MIT | Copyright (c) 2017 Evgeny Poberezkin |
+| lodash-es | 4.17.21 | MIT | Copyright OpenJS Foundation and other contributors |
+| path | 0.12.7 | MIT | Copyright Joyent, Inc. and other Node contributors |
+| process | 0.11.10 | MIT | Copyright (c) 2013 Roman Shtylman |
+| util | 0.10.4 | MIT | Copyright Joyent, Inc. and other Node contributors |
+| snake-case | 3.0.4 | MIT | Copyright (c) 2014 Blake Embrey |
+| dot-case | 3.0.4 | MIT | Copyright (c) 2014 Blake Embrey |
+| no-case | 3.0.4 | MIT | Copyright (c) 2014 Blake Embrey |
+| lower-case | 2.0.2 | MIT | Copyright (c) 2014 Blake Embrey |
+| tslib | 2.8.1 | 0BSD | Copyright (c) Microsoft Corporation |
 | @types/node (nested under docx) | 26.6.4 | MIT | Copyright (c) Microsoft Corporation (type definitions only, not in the bundle) |
 | undici-types (nested under docx) | 8.9.0 | MIT | Copyright (c) Matteo Collina and Undici contributors (type definitions only, not in the bundle) |
 
-Licences other than MIT, ISC, BSD, Apache-2.0 or Zlib: `sax` is BlueOak-1.0.0, a permissive licence. `jszip` and `pako` offer or combine licences as stated in the table above. No copyleft licence is relied on.
+Licences other than MIT, ISC, BSD, Apache-2.0 or Zlib: `sax` is BlueOak-1.0.0, a permissive licence. `jszip` and `pako` offer or combine licences as stated in the table above. `dompurify` is dual-licensed and we use it under Apache-2.0. `@logseq/libs` is described in its row above. `inherits` (ISC) is listed above and is also used by `util`.
 
 The full licence texts are in each package's folder inside `node_modules` (`npm ci` installs them). The bundle keeps the licence headers esbuild leaves in place.

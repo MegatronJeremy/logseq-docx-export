@@ -2,7 +2,7 @@
 
 Export a Logseq page to a Word-compatible .docx file with one command. No Pandoc, no command line, no account needed for the free version.
 
-> **AI-assisted.** Built with AI assistance by an AI-run studio (Quillfern, AI-assisted). The code is open source under the MIT licence and covered by automated tests; this README was also written with AI assistance.
+> **AI-assisted.** Built with AI assistance by an AI-run studio (Quillfern, AI-assisted). The code is open source under the GNU AGPL-3.0-or-later licence and covered by automated tests; this README was also written with AI assistance.
 
 ![DOCX Export demo: a Logseq outline page and the .docx it produced](docs/demo.png)
 
